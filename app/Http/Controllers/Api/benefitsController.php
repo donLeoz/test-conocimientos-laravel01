@@ -6,10 +6,49 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
+/**
+* @OA\Info(
+*     title="API Beneficios",
+*     version="1.0.0"
+* )
+*/
+
 class benefitsController extends Controller
 {
 
+    /**
+    * @OA\Get(
+    *     path="/api/beneficios",
+    *     summary="Obtener beneficios",
+    *     tags={"Beneficios"},
+    *     @OA\Response(
+    *         response=200,
+    *         description="Retorna los beneficios",
+    *         @OA\JsonContent(
+    *             @OA\Property(property="code", type="integer", example=200),
+    *             @OA\Property(property="success", type="boolean", example=true),
+    *             @OA\Property(property="data", type="array", @OA\Items(
+    *                 @OA\Property(property="year", type="integer", example=2021),
+    *                 @OA\Property(property="num", type="integer", example=2),
+    *                 @OA\Property(property="beneficios", type="array", @OA\Items(
+    *                     @OA\Property(property="id", type="integer", example=1),
+    *                     @OA\Property(property="monto", type="integer", example=10000),
+    *                     @OA\Property(property="fecha", type="string", example="2021-01-01"),
+    *                     @OA\Property(property="id_programa", type="integer", example=1),
+    *                     @OA\Property(property="view", type="boolean", example=true),
+    *                     @OA\Property(property="ano", type="integer", example=2021),
+    *                     @OA\Property(property="ficha", type="array", @OA\Items(
+    *                         @OA\Property(property="id", type="integer", example=1),
+    *                         @OA\Property(property="nombre", type="string", example="Ficha 1"),
+    *                         @OA\Property(property="descripcion", type="string", example="Descripcion ficha 1")
+    *                     )),
+    *                 ))
+    *             ))
+    *         )
+    *     )
+    * )
 
+    */
     public function index()
     {
 

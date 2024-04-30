@@ -1,0 +1,108 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Beneficios",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/beneficios": {
+            "get": {
+                "tags": [
+                    "Beneficios"
+                ],
+                "summary": "Obtener beneficios",
+                "operationId": "b87f115b64cfe42e01bf440e4e9e8309",
+                "responses": {
+                    "200": {
+                        "description": "Retorna los beneficios",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "year": {
+                                                        "type": "integer",
+                                                        "example": 2021
+                                                    },
+                                                    "num": {
+                                                        "type": "integer",
+                                                        "example": 2
+                                                    },
+                                                    "beneficios": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id": {
+                                                                    "type": "integer",
+                                                                    "example": 1
+                                                                },
+                                                                "monto": {
+                                                                    "type": "integer",
+                                                                    "example": 10000
+                                                                },
+                                                                "fecha": {
+                                                                    "type": "string",
+                                                                    "example": "2021-01-01"
+                                                                },
+                                                                "id_programa": {
+                                                                    "type": "integer",
+                                                                    "example": 1
+                                                                },
+                                                                "view": {
+                                                                    "type": "boolean",
+                                                                    "example": true
+                                                                },
+                                                                "ano": {
+                                                                    "type": "integer",
+                                                                    "example": 2021
+                                                                },
+                                                                "ficha": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "properties": {
+                                                                            "id": {
+                                                                                "type": "integer",
+                                                                                "example": 1
+                                                                            },
+                                                                            "nombre": {
+                                                                                "type": "string",
+                                                                                "example": "Ficha 1"
+                                                                            },
+                                                                            "descripcion": {
+                                                                                "type": "string",
+                                                                                "example": "Descripcion ficha 1"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
