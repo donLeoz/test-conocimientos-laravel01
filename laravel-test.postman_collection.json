@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "454abd06-9f94-4a30-8e9d-daa00860d5d6",
+		"name": "laravel-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4767339"
+	},
+	"item": [
+		{
+			"name": "beneficios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/beneficios"
+			},
+			"response": []
+		},
+		{
+			"name": "api-ext-beneficios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://run.mocky.io/v3/399b4ce1-5f6e-4983-a9e8-e3fa39e1ea71"
+			},
+			"response": []
+		},
+		{
+			"name": "api-ext-filtros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://run.mocky.io/v3/06b8dd68-7d6d-4857-85ff-b58e204acbf4"
+			},
+			"response": []
+		},
+		{
+			"name": "api-ext-fichas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://run.mocky.io/v3/c7a4777f-e383-4122-8a89-70f29a6830c0"
+			},
+			"response": []
+		}
+	]
+}
